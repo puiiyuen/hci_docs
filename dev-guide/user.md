@@ -1,0 +1,130 @@
+# User
+<!-- [[toc]] -->
+<TOC />
+## Sign Up
+User input personal information and submit them to server. Server will create a new account for user.
+
+### API Address
+URL|https://hci.pchan.cn:8443/sign-up
+:-----|:--------------------------
+Method|POST
+### Request Paramters
+Name|Type|Required|Default|Description
+:-|:-|:-|:-|:-
+userId|string|Yes|N/A|User's ID - `A-Number`
+password|string|Yes|N/A|User's password
+nickname|string|Yes|N/A|User's nickname
+major|string|No|`undeclared`|User's major
+degree|string|Yes|N/A|User's degree
+### Return Values
+Name|Type|Description
+:-|:-|:-
+status|string|The status of registering new user
+userId|string|User ID: if user registers successfully, it will return user ID. Otherwise ,return `null`.
+
+#### Usage example with [axios](https://github.com/axios/axios)
+``` js
+const axios = require('axios')
+
+let postData = {
+    'userId':'A01234567',
+    'password':'pass1234',
+    'nickname':'Patrick',
+    'major':'Computer Science',
+    'degree':'Bachelor of Science'
+}
+
+axios.post('https://hci.pchan.cn:8443/sign-up',postData)
+.then(function (response){
+    console.log('status: '+response.data.status)
+    console.log('userId: '+response.data.userId)
+    console.log('message: '+response.data.message)
+})
+
+```
+Console:   
+`status: SUCCESSFUL`   
+`userId: A01234567`   
+`message: OK`
+
+
+## Login
+User input login information and submit them to server. Server will activate the session between server and user. User can use features after the identity authorization
+
+### API Address
+URL|https://hci.pchan.cn:8443/login
+:-----|:--------------------------
+Method|POST
+
+### Request Paramters
+Name|Type|Required|Default|Description
+:-|:-|:-|:-|:-
+userId|string|Yes|N/A|User's ID - `A-Number`
+password|string|Yes|N/A|User's password
+rememberMe|boolean|No|`false`|Remember login status or not
+
+### Return Values
+Name|Type|Description
+:-|:-|:-
+status|string|Login status
+userId|string|User ID: if user logins successfully, it will return user ID. Otherwise ,return `null`.
+message|string|Operation status prompt
+
+## Online Check
+Check the user if he is online
+### API Address
+URL|https://hci.pchan.cn:8443/online
+:-|:-
+Method|GET
+
+### Return Values
+Name|Type|Description
+:-|:-|:-
+status|string|The operation status of online check feature.
+userId|string|User ID: if user is online, it will return user ID. Otherwise , return `null`.
+message|string|An operation message prompt
+
+#### Usage example with [axios](https://github.com/axios/axios)
+``` js
+const axios = require('axios')
+
+axios.get('https://hci.pchan.cn:8443/online')
+.then(function (response){
+    console.log('status: '+response.data.status)
+    console.log('userId: '+response.data.userId)
+    console.log('message: '+response.data.message)
+})
+
+```
+Console:   
+`status: SUCCESSFUL`   
+`userId: A01234567`   
+`message: A01234567 is online`
+
+## Logout
+Inactivate the session between user and server.
+### API Address
+URL|https://hci.pchan.cn:8443/logout
+:-|:-
+Method|GET
+### Return Values
+Name|Type|Description
+:-|:-|:-
+status|string|The status of log out.
+userId|string|User ID: if user logs out successfully, it will return user ID. Otherwise , return `null`.
+message|string|An operation message prompt
+
+---
+Please also read [Operation Status](status.html) page for more information about status.
+
+<!-- ## Setting
+
+This page will illustrate how to configure API of setting page
+### First
+balabal
+### Second
+BALALAL
+#### sub-second
+this is sub seconde title
+### Third
+JDSF:JDS: -->
