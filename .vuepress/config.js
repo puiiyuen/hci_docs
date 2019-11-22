@@ -27,11 +27,11 @@ module.exports = {
     lastUpdated: 'Last Updated',
     repo: 'https://github.com/puiiyuen/course-registration-helper-backend',
     repoLabel: 'GitHub',
-    docsRepo: 'https://github.com/puiiyuen/puiiyuen.github.io',
+    docsRepo: 'https://github.com/puiiyuen/hci_docs',
     // 假如文档不是放在仓库的根目录下：
     // docsDir: 'docs',
     // 假如文档放在一个特定的分支下：
-    docsBranch: 'master',
+    // docsBranch: 'master',
     // 默认是 false, 设置为 true 来启用
     editLinks: true,
     // 默认为 "Edit this page"
