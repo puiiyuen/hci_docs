@@ -114,6 +114,28 @@ status|string|The status of log out.
 userId|string|User ID: if user logs out successfully, it will return user ID. Otherwise , return `null`.
 message|string|An operation message prompt
 
+## User Information
+Get user information when user is online
+### API Address
+URL|https://hci.pchan.cn:8443/user
+:-|:-
+Method|GET
+### Return Values
+Name|Type|Description
+:-|:-|:-
+status|string|The status of fetching informaiton
+user|json|User's information set
+message|string|An operation message prompt
+
+#### user json
+Name|Type|Description
+:-|:-|:-
+userId|string|User ID
+nickname|string|User's nickname
+degree|string|User's degree
+major|string|User's Major
+
+
 ---
 Please also read [Operation Status](status.html) page for more information about status.
 
