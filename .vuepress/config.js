@@ -16,6 +16,7 @@ module.exports = {
         // 'login',
         // 'setting',
         'user',
+        'courses',
         'status'
       ],
       '/test/':[
