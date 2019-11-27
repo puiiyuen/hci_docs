@@ -1,6 +1,10 @@
 # User
+
+Here is to introduce how to use API of user basic features
+
 <!-- [[toc]] -->
 <TOC />
+
 ## Sign Up
 User input personal information and submit them to server. Server will create a new account for user.
 
