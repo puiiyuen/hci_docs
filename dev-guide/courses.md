@@ -17,11 +17,39 @@ Name|Type|Description
 :-|:-|:-
 status|string|The status of registering new user
 message|string|An operation prompt
-courses|json|course list
+requiredCourses|json|Required courses list
+electiveCourses|json|Elective courses list
 
-#### courses
+#### Return Values json
 ``` json
-"courses": [
+    {
+        "status": "SUCCESSFUL",
+        "message": "OK",
+        "requiredCourses": {
+            // required courses list
+        },
+        "electiveCourses": {
+            // elective courses list
+        }
+    }
+```
+
+#### requiredCourses
+``` json
+"requiredCourses": [
+    {
+        "label": "MATH1210 Introductory Calculus I",
+        "value": "MATH1210"
+    },
+    .
+    .
+    .
+]
+```
+
+#### electiveCourses
+``` json
+"electiveCourses": [
     {
         "children": [
                 {
