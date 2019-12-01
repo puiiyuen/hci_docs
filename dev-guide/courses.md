@@ -15,7 +15,7 @@ Method|GET
 ### Return Values
 Name|Type|Description
 :-|:-|:-
-status|string|The status of registering new user
+status|string|The status of fetch course list
 message|string|An operation prompt
 requiredCourses|json|Required courses list
 electiveCourses|json|Elective courses list
@@ -77,6 +77,20 @@ electiveCourses|json|Elective courses list
 ## Registration
 
 ### General Information
+
+### Show All Registered Courses
+List all registered courses
+#### API Address
+URL|https://hci.pchan.cn:8443/registration/list
+:-|:-
+Method|GET
+
+#### Return Values
+Name|Type|Description
+:-|:-|:-
+courses|json|Registered courses
+status|string|The status of listing courses
+message|string|An operation prompt
 
 ### Add Courses
 Add new courses

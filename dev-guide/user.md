@@ -64,7 +64,7 @@ Method|GET
 #### Return Values
 Name|Type|Description
 :-|:-|:-
-status|string|The status of registering new user
+status|string|The status of fetch degree major list
 message|string|An operation prompt
 degreeMajor|json|A list of major classfied by degree
 
