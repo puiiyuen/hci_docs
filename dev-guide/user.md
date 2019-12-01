@@ -8,11 +8,13 @@ Here is to introduce how to use API of user basic features
 ## Sign Up
 User input personal information and submit them to server. Server will create a new account for user.
 
-### API Address
+### General
+
+#### API Address
 URL|https://hci.pchan.cn:8443/sign-up
 :-----|:--------------------------
 Method|POST
-### Request Paramters
+#### Request Paramters
 Name|Type|Required|Default|Description
 :-|:-|:-|:-|:-
 userId|string|Yes|N/A|User's ID - `A-Number`
@@ -23,13 +25,13 @@ degree|string|Yes|N/A|User's [degree](user.html#degree-major-list)
 
 Please also read [Degree & Major List](user.html#degree-major-list)
 
-### Return Values
+#### Return Values
 Name|Type|Description
 :-|:-|:-
 status|string|The status of registering new user
 userId|string|User ID: if user registers successfully, it will return user ID. Otherwise ,return `null`.
 
-#### Usage example with [axios](https://github.com/axios/axios)
+##### Usage example with [axios](https://github.com/axios/axios)
 ``` js
 const axios = require('axios')
 
@@ -93,19 +95,19 @@ degreeMajor: [
 ## Login
 User input login information and submit them to server. Server will activate the session between server and user. User can use features after the identity authorization
 
-### API Address
+#### API Address
 URL|https://hci.pchan.cn:8443/login
 :-----|:--------------------------
 Method|POST
 
-### Request Paramters
+#### Request Paramters
 Name|Type|Required|Default|Description
 :-|:-|:-|:-|:-
 userId|string|Yes|N/A|User's ID - `A-Number`
 password|string|Yes|N/A|User's password
 rememberMe|boolean|No|`false`|Remember login status or not
 
-### Return Values
+#### Return Values
 Name|Type|Description
 :-|:-|:-
 status|string|Login status
@@ -114,19 +116,19 @@ message|string|Operation status prompt
 
 ## Online Check
 Check the user if he is online
-### API Address
+#### API Address
 URL|https://hci.pchan.cn:8443/online
 :-|:-
 Method|GET
 
-### Return Values
+#### Return Values
 Name|Type|Description
 :-|:-|:-
 status|string|The operation status of online check feature.
 userId|string|User ID: if user is online, it will return user ID. Otherwise , return `null`.
 message|string|An operation message prompt
 
-#### Usage example with [axios](https://github.com/axios/axios)
+##### Usage example with [axios](https://github.com/axios/axios)
 ``` js
 const axios = require('axios')
 
@@ -145,11 +147,11 @@ Console:
 
 ## Logout
 Inactivate the session between user and server.
-### API Address
+#### API Address
 URL|https://hci.pchan.cn:8443/logout
 :-|:-
 Method|GET
-### Return Values
+#### Return Values
 Name|Type|Description
 :-|:-|:-
 status|string|The status of log out.
@@ -158,18 +160,18 @@ message|string|An operation message prompt
 
 ## User Information
 Get user information when user is online
-### API Address
+#### API Address
 URL|https://hci.pchan.cn:8443/user
 :-|:-
 Method|GET
-### Return Values
+#### Return Values
 Name|Type|Description
 :-|:-|:-
 status|string|The status of fetching informaiton
 user|json|User's information set
 message|string|An operation message prompt
 
-#### user json
+##### user json
 Name|Type|Description
 :-|:-|:-
 userId|string|User ID
