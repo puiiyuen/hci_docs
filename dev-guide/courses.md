@@ -73,3 +73,30 @@ electiveCourses|json|Elective courses list
     .
 ]
 ```
+
+## Registration
+
+### General Information
+
+### Add Courses
+Add new courses
+#### API Address
+URL|https://hci.pchan.cn:8443/registration/add
+:-|:-
+Method|POST
+
+#### Request Paramters
+Name|Type|Required|Default|Description
+:-|:-|:-|:-|:-
+courses|json|Yes|N/A|Courses to be registred
+
+#### Return Values
+Name|Type|Description
+:-|:-|:-
+status|string|The status of registering courses
+message|string|Return the amount of courses registred OR error message.
+
+### Drop Courses
+
+### Change Course Status
+
