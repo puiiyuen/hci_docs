@@ -18,8 +18,11 @@ Name|Type|Required|Default|Description
 userId|string|Yes|N/A|User's ID - `A-Number`
 password|string|Yes|N/A|User's password
 nickname|string|Yes|N/A|User's nickname
-major|string|No|`undeclared`|User's major
-degree|string|Yes|N/A|User's degree
+major|string|No|`undeclared`|User's [major](user.html#degree-major-list)
+degree|string|Yes|N/A|User's [degree](user.html#degree-major-list)
+
+Please also read [Degree & Major List](user.html#degree-major-list)
+
 ### Return Values
 Name|Type|Description
 :-|:-|:-
@@ -51,6 +54,41 @@ Console:
 `userId: A01234567`   
 `message: OK`
 
+### Degree & Major List
+
+#### API Address
+URL|https://hci.pchan.cn:8443/sign-up-major
+:-----|:--------------------------
+Method|GET
+
+#### Return Values
+Name|Type|Description
+:-|:-|:-
+status|string|The status of registering new user
+message|string|An operation prompt
+degreeMajor|json|A list of major classfied by degree
+
+##### degreeMajor
+``` json
+degreeMajor: [
+    {
+        "value": "B01",
+        "label": "Bachelor of Arts",
+        "children": [
+            {
+                "value": "BA01",
+                "label": "Anthropology"
+            },
+            .
+            .
+            .
+        ]
+    },
+    .
+    .
+    .
+]
+```
 
 ## Login
 User input login information and submit them to server. Server will activate the session between server and user. User can use features after the identity authorization
