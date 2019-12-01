@@ -4,7 +4,7 @@ Here is to introduce how to access API of courses
 
 <TOC/>
 
-## Fetch General Course List
+## Fetch Course List
 To get a full list of courses: 
 
 ### API Address
