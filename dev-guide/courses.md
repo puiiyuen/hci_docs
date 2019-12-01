@@ -104,6 +104,18 @@ Name|Type|Required|Default|Description
 :-|:-|:-|:-|:-
 courses|json|Yes|N/A|Courses to be registred
 
+##### courses
+``` json
+{
+    "courses": [
+        "CSCI1226",
+        "MATH1211",
+        ...
+    ]
+}
+
+```
+
 #### Return Values
 Name|Type|Description
 :-|:-|:-
