@@ -77,6 +77,25 @@ electiveCourses|json|Elective courses list
 ## Registration
 
 ### General Information
+Show GPA, Total Credit Hour, The Amount of In-Progress Courses
+#### API Address
+URL|https://hci.pchan.cn:8443/registration/info
+:-|:-
+Method|GET
+#### Return Values
+Name|Type|Description
+:-|:-|:-
+basicGradeInfo|json|General grade info
+status|string|The status of fetch general grade info
+message|string|An operation prompt
+##### basicGradeInfo
+``` json
+    "basicGradeInfo": {
+        "totalCreditHour": 12,
+        "inProgress": 1,
+        "gpa": 4.08
+    }
+```
 
 ### Show All Registered Courses
 List all registered courses
