@@ -111,6 +111,32 @@ courses|json|Registered courses
 status|string|The status of listing courses
 message|string|An operation prompt
 
+``` json
+ "courses": [
+        {
+            "userId": "A00424241",
+            "courseId": "CSCI2356",
+            "courseName": "Mobile App Development",
+            "courseStatus": "In-Progress",
+            "subject": "Computing Science"
+        },
+        {
+            "userId": "A00424241",
+            "courseId": "CSCI4477",
+            "courseName": "Data Mining",
+            "courseStatus": "Passed",
+            "subject": "Computing Science"
+        },
+        {
+            "userId": "A00424241",
+            "courseId": "CSCI4500",
+            "courseName": "Research Thesis",
+            "courseStatus": "Passed",
+            "subject": "Computing Science"
+        }
+    ],
+```
+
 ### Add Courses
 Add new courses
 #### API Address
