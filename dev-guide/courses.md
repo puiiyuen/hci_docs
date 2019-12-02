@@ -7,12 +7,12 @@ Here is to introduce how to access API of courses
 ## Fetch Course List
 To get a full list of courses: 
 
-### API Address
+#### API Address
 URL|https://hci.pchan.cn:8443/course/list
 :-----|:--------------------------
 Method|GET
 
-### Return Values
+#### Return Values
 Name|Type|Description
 :-|:-|:-
 status|string|The status of fetch course list
@@ -20,7 +20,7 @@ message|string|An operation prompt
 requiredCourses|json|Required courses list
 electiveCourses|json|Elective courses list
 
-#### Return Values json
+##### Return Values json
 ``` json
     {
         "status": "SUCCESSFUL",
@@ -34,7 +34,7 @@ electiveCourses|json|Elective courses list
     }
 ```
 
-#### requiredCourses
+##### requiredCourses
 ``` json
 "requiredCourses": [
     {
@@ -47,7 +47,7 @@ electiveCourses|json|Elective courses list
 ]
 ```
 
-#### electiveCourses
+##### electiveCourses
 ``` json
 "electiveCourses": [
     {
