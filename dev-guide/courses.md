@@ -101,49 +101,78 @@ status|string|The status of listing courses
 message|string|An operation prompt
 
 ``` json
- "courses": [
+    "courses": [
         {
             "userId": "A00424241",
             "courseId": "CSCI2356",
             "courseName": "Mobile App Development",
             "courseStatus": "In-Progress",
-            "subject": "Computing Science"
+            "creditHour": 3,
+            "subject": "Computing Science",
+            "letterGrade": "-",
+            "gradePoint": -1.0
         },
         {
             "userId": "A00424241",
             "courseId": "CSCI4477",
             "courseName": "Data Mining",
             "courseStatus": "Passed",
-            "subject": "Computing Science"
+            "creditHour": 3,
+            "subject": "Computing Science",
+            "letterGrade": "A+",
+            "gradePoint": 4.3
         },
         {
             "userId": "A00424241",
             "courseId": "CSCI4500",
             "courseName": "Research Thesis",
             "courseStatus": "Passed",
-            "subject": "Computing Science"
+            "creditHour": 6,
+            "subject": "Computing Science",
+            "letterGrade": "A",
+            "gradePoint": 4.0
+        },
+        {
+            "userId": "A00424241",
+            "courseId": "ENGL1205",
+            "courseName": "Introduction to Literature",
+            "courseStatus": "In-Progress",
+            "creditHour": 3,
+            "subject": "English",
+            "letterGrade": "-",
+            "gradePoint": -1.0
         }
     ],
 ```
 
-### Add Courses
-Add new courses
+### Course Registration & Change Status
+Add/Drop/Pass/Fail Courses
 #### API Address
-URL|https://hci.pchan.cn:8443/registration/add
+URL|https://hci.pchan.cn:8443/registration
 :-|:-
 Method|POST
 
 #### Request Paramters
 Name|Type|Required|Default|Description
 :-|:-|:-|:-|:-
-courses|json|Yes|N/A|Courses to be registred
+courses|json|Yes|N/A|Courses to be registred/dropped/passed/failed
 
 ##### courses
+Name|Type|Required|Default|Description
+:-|:-|:-|:-|:-
+cousreId|string|Yes|N/A|Cousre ID
+op|int|No|1|`default: add`   `1:add`   `2:pass`   `3:fail`   `4:drop`   
+letterGrade|string|No|N/A|Only use for `"op":2`
+
+##### Example
 ``` json
 {
     "courses": [
-        "CSCI1226",
-        "MATH1211",
+        {"courseId":"CSCI1226"},    //add 
+        {"courseId":"MATH1211","op":1}, //add 
+        {"courseId":"CSCI4477","op":2,"letterGrade":"A+"},  //pass
+        {"courseId":"ENGL1205","op":3},  //fail
+        {"courseId":"CSCI3342","op":4}  //drop
         ...
     ]
 }
@@ -153,10 +182,7 @@ courses|json|Yes|N/A|Courses to be registred
 #### Return Values
 Name|Type|Description
 :-|:-|:-
-status|string|The status of registering courses
-message|string|Return the amount of courses registred OR error message.
+status|string|The status of course registration operation
+message|string|Return the course registration status OR error message.
 
-### Drop Courses
-
-### Change Course Status
 
