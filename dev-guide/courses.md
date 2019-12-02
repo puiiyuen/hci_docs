@@ -41,9 +41,7 @@ electiveCourses|json|Elective courses list
         "label": "MATH1210 Introductory Calculus I",
         "value": "MATH1210"
     },
-    .
-    .
-    .
+    ...
 ]
 ```
 
@@ -54,23 +52,14 @@ electiveCourses|json|Elective courses list
         "children": [
                 {
                     "label": "ACST4633 Reading the Landscapes of Atlantic Canada",
-                    "value": {
-                        "courseId": "ACST4633",
-                        "courseName": "Reading the Landscapes of Atlantic Canada",
-                        "creditHour": 3,
-                        "subjectId": "ACST"
-                    }
+                    "value": "ACST4633",
                 },
-               .
-               .
-               .
+               ...
         ],
         "label": "Atlantic Canada Studies",
         "value": "Atlantic Canada Studies"
     },
-    .
-    .
-    .
+    ...
 ]
 ```
 
