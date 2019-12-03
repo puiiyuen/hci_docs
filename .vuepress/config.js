@@ -6,22 +6,19 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Dev Guide', link: '/dev-guide/' },
-      { text: 'User Guide', link: '/user-guide/'}
+      { text: 'User Guide', link: '/user-guide/'},
+      { text: 'Dev Guide', link: '/dev-guide/' }
     ],
     sidebar: {
       '/dev-guide/': [
         '',
-        // 'sign-up',
-        // 'login',
-        // 'setting',
         'user',
         'courses',
         'status'
       ],
       '/user-guide/':[
-        ''
-        // 'user'
+        '',
+        'account'
       ],
       '/test/':[
         '',
