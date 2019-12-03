@@ -160,8 +160,8 @@ courses|json|Yes|N/A|Courses to be registred/dropped/passed/failed
 ##### courses
 Name|Type|Required|Default|Description
 :-|:-|:-|:-|:-
-cousreId|string|Yes|N/A|Cousre ID
-op|int|No|1|`default: add`   `1:add`   `2:pass`   `3:fail`   `4:drop`   
+courseId|string|Yes|N/A|Cousre ID
+op|int|No|0|`0:add` `1:in-progress` `2:pass` `3:fail` `4:drop` 
 letterGrade|string|No|N/A|Only use for `"op":2`
 
 ##### Example
@@ -169,7 +169,8 @@ letterGrade|string|No|N/A|Only use for `"op":2`
 {
     "courses": [
         {"courseId":"CSCI1226"},    //add 
-        {"courseId":"MATH1211","op":1}, //add 
+        {"courseId":"MATH1211","op":0}, //add 
+        {"courseId":"MATH2305","op":1}, //in-progress
         {"courseId":"CSCI4477","op":2,"letterGrade":"A+"},  //pass
         {"courseId":"ENGL1205","op":3},  //fail
         {"courseId":"CSCI3342","op":4}  //drop
@@ -182,7 +183,7 @@ letterGrade|string|No|N/A|Only use for `"op":2`
 #### Return Values
 Name|Type|Description
 :-|:-|:-
-status|string|The status of course registration operation
+status|array/string|The status of course registration operation
 message|string|Return the course registration status OR error message.
 
 

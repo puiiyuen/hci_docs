@@ -179,18 +179,29 @@ nickname|string|User's nickname
 degree|string|User's degree
 major|string|User's Major
 
+## Settings
+Modify Personal Information
+#### API Adress
+URL|https://hci.pchan.cn:8443/settings
+:-|:-
+Method|POST
+
+#### Request Parameters
+Name|Type|Required|Default|Description
+:-|:-|:-|:-|:-
+nickname|string|No|N/A|Change nickname
+oldPassword|string|No (When change password, *required*)|N/A|Change password - old password
+newPassword|string|No (When change password, *required*)|N/A|Change password - new password
+major|string|No|N/A|Change[major](user.html#degree-major-list)
+degree|string|No|N/A|Change [degree](user.html#degree-major-list)
+
+Please also read [Degree & Major List](user.html#degree-major-list)
+
+#### Return Values
+Name|Type|Description
+:-|:-|:-
+status|array/string|The status of change informaiton
+message|string|An operation message prompt
 
 ---
 Please also read [Operation Status](status.html) page for more information about status.
-
-<!-- ## Setting
-
-This page will illustrate how to configure API of setting page
-### First
-balabal
-### Second
-BALALAL
-#### sub-second
-this is sub seconde title
-### Third
-JDSF:JDS: -->
