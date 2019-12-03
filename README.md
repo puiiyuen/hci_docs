@@ -4,7 +4,7 @@ heroImage: /hero.png
 heroText: Course Registration Helper
 tagline: Documentation
 actionText: Get Started →
-actionLink: /dev-guide/
+actionLink: /user-guide/
 footer: Copyright © 2019 Patrick Chen
 ---
 

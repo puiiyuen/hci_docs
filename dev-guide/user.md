@@ -178,6 +178,8 @@ userId|string|User ID
 nickname|string|User's nickname
 degree|string|User's degree
 major|string|User's Major
+degreeId|string|Degree's Id
+majorId|string|Major's Id
 
 ## Settings
 Modify Personal Information
@@ -192,7 +194,7 @@ Name|Type|Required|Default|Description
 nickname|string|No|N/A|Change nickname
 oldPassword|string|No (When change password, *required*)|N/A|Change password - old password
 newPassword|string|No (When change password, *required*)|N/A|Change password - new password
-major|string|No|N/A|Change[major](user.html#degree-major-list)
+major|string|No|N/A|Change [major](user.html#degree-major-list)
 degree|string|No|N/A|Change [degree](user.html#degree-major-list)
 
 Please also read [Degree & Major List](user.html#degree-major-list)

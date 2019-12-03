@@ -19,6 +19,10 @@ module.exports = {
         'courses',
         'status'
       ],
+      '/user-guide/':[
+        ''
+        // 'user'
+      ],
       '/test/':[
         '',
         'test'
