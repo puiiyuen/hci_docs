@@ -18,10 +18,13 @@ Next, let's [login](#login-my-account) the assistant!
 ## Login my account
 
 Here is the [login](https://hci.pchan.cn/#/login) page:   
+
 ![Login Page](/docs/user-guide/login-1.png "Login Page")
 Also, please fill in the information:   
+
 ![Fill in the blanks](/docs/user-guide/login-2.png "Fill in the blanks")
 Finally, click **Log In**, then there is:   
+
 ![Dashboard](/docs/user-guide/dashboard.png "Dashboard")
 
 After login, start to [use it!](courses.md)
