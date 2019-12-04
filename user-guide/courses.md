@@ -62,7 +62,7 @@ Next, let's see how to **[track your courses](#track-your-courses)**
 ## Track your courses
 Wanna track your courses? Here is the [place](https://hci.pchan.cn/#/track-your-courses)   
 
-![Track your courses](docs/user-guide/track-main.png)
+![Track your courses](/docs/user-guide/track-main.png)
 
 ### In-Progress
 Change the status by right hand side drop down menu   
@@ -73,7 +73,7 @@ That is.
 ### Completed
 Again, change the status by right hand side drop down menu   
 
-![Completed](/docs/user-guide/cp-action.png)
+![Completed](/docs/user-guide/completed-action.png)
 
 Cool, a lot of A+!
 
