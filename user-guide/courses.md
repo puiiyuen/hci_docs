@@ -21,14 +21,14 @@ On the dashboard there are 4 parts:
 
 ### Update the status of in-progress courses
 
-👦🏼： **"I have finished these courses."**    
-👦🏻: Yup, you can change the status by clicking the drop-down menu   
+👦🏼: **"I have finished these courses."**    
+👦🏻: Yep, you can change the status by clicking the drop-down menu   
 
 ![Update courses status](/docs/user-guide/ch-course-0.png)
 ![Update courses status2](/docs/user-guide/ch-course-1.png)
 
 👦🏻: If those courses are still in-progress, just clicke **Next**   
-👦🏼：**Got it!**
+👦🏼: **Got it!**
 
 ### Choose your major courses
 
@@ -41,4 +41,42 @@ On the dashboard there are 4 parts:
 
 ### Choose elective courses
 
-`//todo`
+Now, it's turn for elective courses:   
+
+![Choose elective courses](/docs/user-guide/ch-course-3-1.png)
+
+Click the **"+"** button, then select course from the drop-down menu   
+
+![Choose elective courses](/docs/user-guide/ch-course-3-2.png)
+
+Don't forget clicking **Done** button 🤓
+
+### All set
+All set now!   
+
+![All set](/docs/user-guide/ch-course-4.png)
+
+Next, let's see how to **[track your courses](#track-your-courses)**
+
+
+## Track your courses
+Wanna track your courses? Here is the [place](https://hci.pchan.cn/#/track-your-courses)   
+
+![Track your courses](docs/user-guide/track-main.png)
+
+### In-Progress
+Change the status by right hand side drop down menu   
+
+![In-progress](/docs/user-guide/ip-action.png)
+That is.
+
+### Completed
+Again, change the status by right hand side drop down menu   
+
+![Completed](/docs/user-guide/cp-action.png)
+
+Cool, a lot of A+!
+
+## Settings
+
+Plese check **Settings** [here](account.md#settings)

@@ -31,4 +31,12 @@ After login, start to [use it!](courses.md)
 
 ## Settings
 
-`//ToDo`
+### Nickname, Degree, Major
+Enter your new name, or select your new major, new degree in drop-down menu
+![Settings-1](/docs/user-guide/settings-1.png)
+Easy! Isn't it?   
+
+### Password
+Enter your current password and new password, then change it
+![Settings-2](/docs/user-guide/settings-2.png)
+If you forget your current password, we are sorry that you might not be able to change your password ☹️
