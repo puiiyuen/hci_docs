@@ -3,7 +3,7 @@
 ## Introduction
 To help you with the [course registration assistant](https://hci.pchan.cn). Just like 1,2,3  
 
-![Dashboard](/docs/user-guide/dashboard.png)
+![Dashboard](/user-guide/dashboard.png)
 
 Quick Links:   
 - [Get a new account](account.md#create-a-new-account)

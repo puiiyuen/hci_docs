@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Course Registration Helper',
   description: 'Course Registration Helper Documents',
-  base:'/docs/',
+  base:'/hci_docs/',
   // base:'/',
   themeConfig: {
     nav: [
