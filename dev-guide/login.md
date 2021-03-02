@@ -4,7 +4,7 @@ User input login information and submit them to server. Server will activate the
 
 ## Configuration
 ### API Address
-URL|https://hci.pchan.cn:8443/login
+URL|https://hci.peiyuan.ch/login
 :-----|:--------------------------
 Method|POST
 
@@ -31,7 +31,7 @@ let postData = {
     'password':'pass1234'
 }
 
-axios.post('https://hci.pchan.cn:8443/login',postData)
+axios.post('https://hci.peiyuan.ch/login',postData)
 .then(function (response){
     console.log('status: '+response.data.status)
     console.log('userId: '+response.data.userId)

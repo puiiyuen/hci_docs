@@ -4,7 +4,7 @@ Start to use it now!
 
 ## Dashboard
 
-Bravo! You have logged in. Now you can see the awesome [dashboard](https://hci.pchan.cn/#/dashboard)   
+Bravo! You have logged in. Now you can see the awesome [dashboard](https://demo.peiyuan.ch/#/dashboard)   
 
 ![Dashboard](/hci_docs/user-guide/dashboard.png)
 
@@ -60,7 +60,7 @@ Next, let's see how to **[track your courses](#track-your-courses)**
 
 
 ## Track your courses
-Wanna track your courses? Here is the [place](https://hci.pchan.cn/#/track-your-courses)   
+Wanna track your courses? Here is the [place](https://demo.peiyuan.ch/#/track-your-courses)   
 
 ![Track your courses](/hci_docs/user-guide/track-main.png)
 

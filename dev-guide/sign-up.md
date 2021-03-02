@@ -3,7 +3,7 @@
 User input personal information and submit them to server. Server will create a new account for user.
 ## Configuration
 ### API Address
-URL|https://hci.pchan.cn:8443/sign-up
+URL|https://hci.peiyuan.ch/sign-up
 :-----|:--------------------------
 Method|POST
 ### Request Paramters

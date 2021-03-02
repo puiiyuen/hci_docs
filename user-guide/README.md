@@ -1,7 +1,7 @@
 # User Guide
 ---
 ## Introduction
-To help you with the [course registration assistant](https://hci.pchan.cn). Just like 1,2,3  
+To help you with the [course registration assistant](https://demo.peiyuan.ch). Just like 1,2,3  
 
 ![Dashboard](/hci_docs/user-guide/dashboard.png)
 

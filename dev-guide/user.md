@@ -11,7 +11,7 @@ User input personal information and submit them to server. Server will create a 
 ### General
 
 #### API Address
-URL|https://hci.pchan.cn:8443/sign-up
+URL|https://hci.peiyuan.ch/sign-up
 :-----|:--------------------------
 Method|POST
 #### Request Paramters
@@ -43,7 +43,7 @@ let postData = {
     'degree':'Bachelor of Science'
 }
 
-axios.post('https://hci.pchan.cn:8443/sign-up',postData)
+axios.post('https://hci.peiyuan.ch/sign-up',postData)
 .then(function (response){
     console.log('status: '+response.data.status)
     console.log('userId: '+response.data.userId)
@@ -59,7 +59,7 @@ Console:
 ### Degree & Major List
 
 #### API Address
-URL|https://hci.pchan.cn:8443/sign-up-major
+URL|https://hci.peiyuan.ch/sign-up-major
 :-----|:--------------------------
 Method|GET
 
@@ -96,7 +96,7 @@ degreeMajor: [
 User input login information and submit them to server. Server will activate the session between server and user. User can use features after the identity authorization
 
 #### API Address
-URL|https://hci.pchan.cn:8443/login
+URL|https://hci.peiyuan.ch/login
 :-----|:--------------------------
 Method|POST
 
@@ -117,7 +117,7 @@ message|string|Operation status prompt
 ## Online Check
 Check the user if he is online
 #### API Address
-URL|https://hci.pchan.cn:8443/online
+URL|https://hci.peiyuan.ch/online
 :-|:-
 Method|GET
 
@@ -132,7 +132,7 @@ message|string|An operation message prompt
 ``` js
 const axios = require('axios')
 
-axios.get('https://hci.pchan.cn:8443/online')
+axios.get('https://hci.peiyuan.ch/online')
 .then(function (response){
     console.log('status: '+response.data.status)
     console.log('userId: '+response.data.userId)
@@ -148,7 +148,7 @@ Console:
 ## Logout
 Inactivate the session between user and server.
 #### API Address
-URL|https://hci.pchan.cn:8443/logout
+URL|https://hci.peiyuan.ch/logout
 :-|:-
 Method|GET
 #### Return Values
@@ -161,7 +161,7 @@ message|string|An operation message prompt
 ## User Information
 Get user information when user is online
 #### API Address
-URL|https://hci.pchan.cn:8443/user
+URL|https://hci.peiyuan.ch/user
 :-|:-
 Method|GET
 #### Return Values
@@ -184,7 +184,7 @@ majorId|string|Major's Id
 ## Settings
 Modify Personal Information
 #### API Adress
-URL|https://hci.pchan.cn:8443/settings
+URL|https://hci.peiyuan.ch/settings
 :-|:-
 Method|POST
 

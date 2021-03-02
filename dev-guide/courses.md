@@ -8,7 +8,7 @@ Here is to introduce how to access API of courses
 To get a full list of courses: 
 
 #### API Address
-URL|https://hci.pchan.cn:8443/course/list
+URL|https://hci.peiyuan.ch/course/list
 :-----|:--------------------------
 Method|GET
 
@@ -68,7 +68,7 @@ electiveCourses|json|Elective courses list
 ### General Information
 Show GPA, Total Credit Hour, The Amount of In-Progress Courses
 #### API Address
-URL|https://hci.pchan.cn:8443/registration/info
+URL|https://hci.peiyuan.ch/registration/info
 :-|:-
 Method|GET
 #### Return Values
@@ -89,7 +89,7 @@ message|string|An operation prompt
 ### Show All Registered Courses
 List all registered courses
 #### API Address
-URL|https://hci.pchan.cn:8443/registration/list
+URL|https://hci.peiyuan.ch/registration/list
 :-|:-
 Method|GET
 
@@ -148,7 +148,7 @@ message|string|An operation prompt
 ### Course Registration & Change Status
 Add/Drop/Pass/Fail Courses
 #### API Address
-URL|https://hci.pchan.cn:8443/registration
+URL|https://hci.peiyuan.ch/registration
 :-|:-
 Method|POST
 
