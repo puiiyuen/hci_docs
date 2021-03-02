@@ -39,8 +39,8 @@ let postData = {
     'userId':'A01234567',
     'password':'pass1234',
     'nickname':'Patrick',
-    'major':'Computer Science',
-    'degree':'Bachelor of Science'
+    'major':'C01',
+    'degree':'B01'
 }
 
 axios.post('https://hci.peiyuan.ch/sign-up',postData)
